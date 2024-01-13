@@ -33,7 +33,7 @@ public class King extends ChessPiece {
         if (getBoard().positionExists(p) && canMove(p)) {
             matrix[p.getRow()][p.getColumn()] = true;
         }
-        //above
+        //bellow
         p.setValues(position.getRow() + 1, position.getColumn());
         if (getBoard().positionExists(p) && canMove(p)) {
             matrix[p.getRow()][p.getColumn()] = true;
